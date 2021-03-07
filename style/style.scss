@@ -20,6 +20,8 @@
         padding: 20px 0;
         line-height: 1;
         color: $violet;
+        position: fixed;
+        width: 100%;
         .container {
             display: flex;
             justify-content: space-between;
@@ -102,13 +104,61 @@
             font-size: 1.9rem;
         }
         hr {
-            border: 5px solid $violet;
             width: 100px;
-            margin: 25px auto;
         }
         img {
             margin-top: 45px;
             width: 100%;
+        }
+    }
+}
+/**************
+    SKILLS
+***************/
+.skills {
+    background-image: linear-gradient(rgba($violet, 0.95), rgba($violet, 0.95)), url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 130px 0 160px;
+    article {
+        display: flex;
+        color: $white;
+        justify-content: space-between;
+        max-width: 750px;
+        margin: 0 auto;
+        div {
+            flex: 0 0 33%;
+            display: flex;
+            align-items: center;
+            h2 {
+                font-size: 3rem;
+                font-weight: 400;
+                span {
+                    text-shadow: 0 0 5px $black;
+                    font-style: italic;
+                }
+            }
+            ul {
+                li {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    &::before {
+                        content: ">_";
+                        display: inline;
+                        font-weight: 600;
+                    }
+                }
+            }
+            i {
+                font-size: 10rem;
+                text-shadow: 0 0 5px $black;
+                text-align: right;
+                width: 100%;
+            }
         }
     }
 }
@@ -118,12 +168,39 @@
 ***************/
 footer {
     background-color: $cream;
+    text-align: center;
+    padding: $py;
+    line-height: 1;
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    hr {
+        width: 60px;
+    }
+    a {
+        i {
+            color: $violet;
+            font-size: 1.9rem;
+            margin-left: 20px;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    p {
+        margin-top: 10px;
+        a {
+            text-transform: uppercase;
+        }
+    }
 }
 /**************
     RESPONSIVE
 ***************/
 @media (max-width: 767px) {
-    .servicies {
-        padding: 20px 0;
+    .servicies,
+    .skills {
+        padding: 20px 0our;
     }
 }
