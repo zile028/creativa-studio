@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Poppins&display=swap");
 
 $fontFamilyPrimary: "Poppins", sans-serif;
-$fontFamilySecondary: "Josefin+Sans", sans-serif;
+$fontFamilySecondary: "Josefin Sans", sans-serif;
 $fontSize: 16px;
 $gray: #3a4454; /*rgb(58, 68, 84)*/
 $cream: #f5dddd;
@@ -9,5 +9,5 @@ $violet: #6b4e71; /* rgb(107, 78, 113)*/
 $white: #fff;
 $black: #000;
 $lightgray: #b3b3b3;
-$transition: 0.4s ease;
+$transition: 0.4s ease-in-out;
 $py: 50px 0;

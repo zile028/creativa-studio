@@ -7,10 +7,87 @@
     HEADER
 ***************/
 .header {
-    height: 100vh;
-    background-image: url(../img/header-background.png);
+    height: 90vh;
+    background-image: linear-gradient(to bottom, rgba($violet, 0.9), rgba($cream, 0.4)),
+        url(../img/header-background.png);
+    opacity: 0.9;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    nav {
+        background: $cream;
+        padding: 20px 0;
+        line-height: 1;
+        color: $violet;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                font-style: italic;
+                font-size: 2.3rem;
+                font-family: $fontFamilySecondary;
+                letter-spacing: 1px;
+                span {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    //transition: color $transition;
+                    a {
+                        padding: 10px 10px;
+                        font-size: 1.1rem;
+                        text-transform: uppercase;
+                        transition: background-color $transition;
+                        &:hover {
+                            background-color: $violet;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hgroup {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        line-height: 1;
+        div {
+            flex: 0 0 50%;
+            &:last-child {
+                flex: 0 0 40%;
+            }
+        }
+        h1 {
+            color: $black;
+            font-size: 4rem;
+            font-weight: 400;
+            margin: 0 0 25px 0;
+            opacity: 0.9;
+            span {
+                color: $white;
+                font-style: italic;
+            }
+        }
+        p {
+            font-size: 1.3rem;
+            margin: 0 0 30px 0;
+            font-weight: 400;
+            color: $black;
+            opacity: 0.9;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
 }
 /**************
     FOOTER
