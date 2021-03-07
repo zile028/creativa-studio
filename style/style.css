@@ -79,8 +79,6 @@ hr {
 ***************/
 .header {
   height: 90vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 78, 113, 0.9)), to(rgba(255, 255, 255, 0.4))), url(../img/header-background.png);
-  background-image: linear-gradient(to bottom, rgba(107, 78, 113, 0.9), rgba(255, 255, 255, 0.4)), url(../img/header-background.png);
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -92,12 +90,71 @@ hr {
           flex-direction: column;
 }
 
+.header-index {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 78, 113, 0.99)), to(rgba(255, 255, 255, 0.4))), url(../img/header-background.png);
+  background-image: linear-gradient(to bottom, rgba(107, 78, 113, 0.99), rgba(255, 255, 255, 0.4)), url(../img/header-background.png);
+}
+
+.header-index hgroup h1 {
+  font-size: 4rem;
+  margin: 0 0 25px 0;
+}
+
+.header-index hgroup p {
+  font-size: 1.3rem;
+  margin: 0 0 30px 0;
+  font-weight: 600;
+}
+
+.header-index hgroup div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.header-index hgroup div:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.header-contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 78, 113, 0.8)), to(white)), url(../img/novisad.jpg);
+  background-image: linear-gradient(to bottom, rgba(107, 78, 113, 0.8), white), url(../img/novisad.jpg);
+}
+
+.header-contact hgroup {
+  text-align: center;
+}
+
+.header-contact hgroup div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.header-contact hgroup h1 {
+  font-size: 2.7rem;
+  margin: 0 0 15px 0;
+}
+
+.header-contact hgroup p {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.header-about {
+  background-image: url(../img/slide1.jpg);
+  height: 65vh;
+}
+
 .header nav {
   background: #f5dddd;
   padding: 20px 0;
   line-height: 1;
   color: #6b4e71;
   position: fixed;
+  z-index: 5;
   width: 100%;
 }
 
@@ -160,23 +217,9 @@ hr {
   line-height: 1;
 }
 
-.header hgroup div {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-}
-
-.header hgroup div:last-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-}
-
 .header hgroup h1 {
   color: #000;
-  font-size: 4rem;
   font-weight: 400;
-  margin: 0 0 25px 0;
   opacity: 0.9;
 }
 
@@ -187,8 +230,6 @@ hr {
 
 .header hgroup p {
   font-size: 1.3rem;
-  margin: 0 0 30px 0;
-  font-weight: 600;
 }
 
 .header hgroup img {
@@ -297,6 +338,24 @@ hr {
   text-shadow: 0 0 5px #000;
   text-align: right;
   width: 100%;
+}
+
+.contact i {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #6b4e71;
+}
+
+.contact h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.contact p,
+.contact a {
+  line-height: 1.5;
+  font-size: 1rem;
+  display: block;
 }
 
 /**************
