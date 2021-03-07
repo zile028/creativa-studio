@@ -1,0 +1,25 @@
+@mixin btn($moveArrow, $px) {
+    background: none;
+    height: 50px;
+    border: 1px solid $black;
+    padding: 0 $px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color $transition;
+    i {
+        transition: transform $transition;
+    }
+    &:hover {
+        background-color: $gray;
+        border: 1px solid $gray;
+        & > i {
+            transform: translateX($moveArrow);
+        }
+    }
+}
+@mixin imgBasic() {
+    border-radius: 40px;
+    box-shadow: 0 0 30px 5px $gray;
+}

@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $fontFamilyPrimary;
+    font-size: $fontSize;
+    color: $black;
+    line-height: 1.6;
+    font-weight: 400;
+}
+button {
+    font-family: $fontFamilyPrimary;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fontFamilySecondary;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.centerAbsolut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.social {
+    transition: opacity $transition;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+/**************
+    RESPONSIVE
+***************/
+@media (max-width: 767px) {
+}

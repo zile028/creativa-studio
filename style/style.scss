@@ -1,0 +1,25 @@
+@import "variable";
+@import "reset";
+@import "basic";
+@import "mixin";
+
+/**************
+    HEADER
+***************/
+.header {
+    height: 100vh;
+    background-image: url(../img/header-background.png);
+    background-size: cover;
+    background-position: center;
+}
+/**************
+    FOOTER
+***************/
+footer {
+    background-color: $cream;
+}
+/**************
+    RESPONSIVE
+***************/
+@media (max-width: 767px) {
+}
