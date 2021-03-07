@@ -236,4 +236,9 @@ footer {
 /**************
     RESPONSIVE
 ***************/
+@media (max-width: 767px) {
+  .servicies {
+    padding: 20px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
