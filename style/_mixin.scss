@@ -23,3 +23,11 @@
     border-radius: 40px;
     box-shadow: 0 0 30px 5px $gray;
 }
+@mixin columns() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .col {
+        flex: 0 0 30%;
+    }
+}

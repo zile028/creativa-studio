@@ -47,8 +47,22 @@
         }
     }
     &-about {
-        background-image: url(../img/slide1.jpg);
+        position: relative;
+        //background-image: url(../img/slide1.jpg), url(../img/slide2.jpg);
+        //background-position: right bottom, left top;
         height: 65vh;
+        .slider {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+            img {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
     background-size: cover;
     background-position: center;
@@ -56,7 +70,7 @@
     flex-direction: column;
 
     nav {
-        background: $cream;
+        background: rgba($cream, 0.9);
         padding: 20px 0;
         line-height: 1;
         color: $violet;
@@ -195,6 +209,54 @@
         }
     }
 }
+/**************
+    ABOUT
+***************/
+.about {
+    padding: $py;
+    .title {
+        text-align: center;
+        h2 {
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+        hr {
+            margin: 20px auto 0;
+            width: 30%;
+        }
+    }
+    article {
+        @include columns();
+        margin-top: 80px;
+    }
+    .col {
+        text-align: center;
+        border: 1px solid $black;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px 5px rgba($lightgray, 0.5);
+        img {
+            width: 100%;
+            height: 33%;
+            object-fit: cover;
+        }
+        h4 {
+            font-size: 1.4rem;
+            margin-top: 10px;
+        }
+        hr {
+            width: 100px;
+        }
+        P {
+            font-weight: 400;
+            font-size: 1rem;
+            margin: 10px 40px 40px;
+        }
+    }
+}
+/**************
+    CONTACT
+***************/
 .contact {
     i {
         font-size: 3rem;

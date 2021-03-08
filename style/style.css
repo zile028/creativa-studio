@@ -144,12 +144,27 @@ hr {
 }
 
 .header-about {
-  background-image: url(../img/slide1.jpg);
+  position: relative;
   height: 65vh;
 }
 
+.header-about .slider {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header-about .slider img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header nav {
-  background: #f5dddd;
+  background: rgba(245, 221, 221, 0.9);
   padding: 20px 0;
   line-height: 1;
   color: #6b4e71;
@@ -340,6 +355,79 @@ hr {
   width: 100%;
 }
 
+/**************
+    ABOUT
+***************/
+.about {
+  padding: 50px 0;
+}
+
+.about .title {
+  text-align: center;
+}
+
+.about .title h2 {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.about .title hr {
+  margin: 20px auto 0;
+  width: 30%;
+}
+
+.about article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+}
+
+.about article .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.about .col {
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px 5px rgba(179, 179, 179, 0.5);
+          box-shadow: 0 0 10px 5px rgba(179, 179, 179, 0.5);
+}
+
+.about .col img {
+  width: 100%;
+  height: 33%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .col h4 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.about .col hr {
+  width: 100px;
+}
+
+.about .col P {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 10px 40px 40px;
+}
+
+/**************
+    CONTACT
+***************/
 .contact i {
   font-size: 3rem;
   margin-bottom: 30px;
